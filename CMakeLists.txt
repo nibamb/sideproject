@@ -77,7 +77,7 @@ if(USE_FREERTOS)
     list(APPEND MAIN_SOURCES src/freertos_main.c src/freertos/freertos_posix_port.c ${FREERTOS_SOURCES})
     list(APPEND MAIN_LIBS freertos_config freertos_kernel)
 else()
-    list(APPEND MAIN_SOURCES src/main.c)
+    list(APPEND MAIN_SOURCES src/main.c ui_launcher.cpp)
 endif()
 
 
@@ -141,7 +141,10 @@ if(LVGL_PRO_PROJECT_DIR)
   endif()
 endif()
 
-add_executable(main ${MAIN_SOURCES})
+add_executable(main
+    src/main.c
+    src/ui_launcher.cpp
+)
 target_compile_definitions(main PRIVATE LV_CONF_INCLUDE_SIMPLE)
 target_link_libraries(main ${MAIN_LIBS})
 
