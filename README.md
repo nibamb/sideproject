@@ -1,4 +1,13 @@
-# VSCode Simulator project for LVGL
+#   DUPA 1 NIE JEST TO WAZNE
+
+
+
+
+
+
+
+
+DUPA1 VSCode Simulator project for LVGL
 
 [LVGL](https://github.com/lvgl/lvgl) is written mainly for microcontrollers and embedded systems, however you can run the library **on your PC** as well without any embedded hardware. The code written on PC can be simply copied when your are using an embedded system.
 
